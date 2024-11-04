@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Workshop Registration Form</h1>
+        <form action="submit_registration.php" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="date">Preferred Date:</label>
+            <select id="date" name="date" required>
+                <option value="2024-11-10">November 10, 2024</option>
+                <option value="2024-11-11">November 11, 2024</option>
+                <option value="2024-11-12">November 12, 2024</option>
+            </select><br>
+
+            <label for="topic">Select Topic:</label>
+            <select id="topic" name="topic" required>
+                <option value="cloud_computing">Cloud Computing</option>
+                <option value="machine_learning">Machine Learning</option>
+                <option value="data_analytics">Data Analytics</option>
+            </select><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required><br>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required><br>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required><br>
+            <label for="other">Other</label>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="payment_receipt">Upload Payment Receipt:</label>
+            <input type="file" id="payment_receipt" name="payment_receipt" accept=".jpg, .jpeg, .png, .pdf" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <h2>Workshop Topics and Resource Persons</h2>
+        <div class="topics">
+            <div class="topic">
+                <h3>Day 1: Cloud Computing</h3>
+                <img src="Screenshot 2024-11-04 190820.png" alt="cloud computing" class="topic-screenshot" >
+                <p><strong>Resource Person:</strong> Dr. John Doe, Expert in Cloud Technologies</p>
+            </div>
+            <div class="topic">
+                <h3>Day 2: Machine Learning</h3>
+                <img src="Screenshot 2024-11-04 222106.PNG" WIDTH="40% HEIGHT=40 %alt="Machine Learning" class="topic-image">
+                <p><strong>Resource Person:</strong> Ms. Jane Smith, AI Researcher</p>
+            </div>
+            <div class="topic">
+                <h3>Day 3: Data Analytics</h3>
+                <img src="Screenshot 2024-11-04 222244.PNG"WIDTH="40%" HEIGHT=40% alt="Data Analytics" class="topic-image">
+                <p><strong>Resource Person:</strong> Dr. Alice Johnson, Data Scientist</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
